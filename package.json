@@ -1,37 +1,21 @@
 {
-  "name": "myblog",
-  "private": true,
+  "name": "learn-starter",
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "private": true,
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "devDependencies": {},
   "dependencies": {
-    "strapi": "3.0.5",
-    "strapi-admin": "3.0.5",
-    "strapi-utils": "3.0.5",
-    "strapi-plugin-content-type-builder": "3.0.5",
-    "strapi-plugin-content-manager": "3.0.5",
-    "strapi-plugin-users-permissions": "3.0.5",
-    "strapi-plugin-email": "3.0.5",
-    "strapi-plugin-upload": "3.0.5",
-    "strapi-connector-bookshelf": "3.0.5",
-    "knex": "<0.20.0",
-    "sqlite3": "latest"
-  },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "38bab3c0-b925-4bfc-8102-230fc61410bb"
-  },
-  "engines": {
-    "node": ">=10.0.0",
-    "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+    "date-fns": "^2.14.0",
+    "gray-matter": "^4.0.2",
+    "next": "9.3.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-scripts": "^3.4.1",
+    "react-scroll": "^1.7.16",
+    "remark": "^12.0.0",
+    "remark-html": "^11.0.2"
+  }
 }
