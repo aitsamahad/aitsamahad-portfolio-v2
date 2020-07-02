@@ -3,7 +3,7 @@ import Head from "next/head";
 import { getAllPortfolioIds, getPortfolioData } from "../../lib/portfolio";
 import Date from "../../components/date";
 
-import utilStyles from "../../styles/utils.module.css";
+// import utilStyles from "../../styles/utils.module.css";
 
 export default function Post({ portfolioData }) {
   return (
@@ -12,10 +12,8 @@ export default function Post({ portfolioData }) {
         <title>{portfolioData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{portfolioData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={portfolioData.date} />
-        </div>
+        <h1>{portfolioData.title}</h1>
+        <div>{/* <Date dateString={portfolioData.date} /> */}</div>
         <div dangerouslySetInnerHTML={{ __html: portfolioData.contentHtml }} />
       </article>
     </Layout>

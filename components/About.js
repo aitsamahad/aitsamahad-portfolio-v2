@@ -90,7 +90,10 @@ const About = () => {
                 <a href="mailto:aitsama.ahad@gmail.com">Get In Touch</a>
               </motion.div>
               <ScaleBox action="fadeInUp">
-                <a href="#" className="custom_btn btn_primary resume">
+                <a
+                  href="/static/AitsamAhad_BackendSoftwareEngineer.pdf"
+                  className="custom_btn btn_primary resume"
+                >
                   Download Resume!
                 </a>
               </ScaleBox>

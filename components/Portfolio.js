@@ -51,13 +51,14 @@ const Portfolio = ({ data }) => {
           {portfolioItems.map(data => {
             if (isRight) {
               return (
-                <IntersectionObserver>
+                <IntersectionObserver key={data.id}>
                   <ScaleBox action="fadeInLeft">
                     <div className="portfolio-item">
                       <div
                         className="portfolio-img has-margin-right"
-                        key={data.id}
-                        custom={(isRight = !isRight)}
+                        custom={
+                          isRight == true ? (isRight = false) : (isRight = true)
+                        }
                       >
                         <img src={data.image} alt={data.title} />
                       </div>
@@ -76,12 +77,13 @@ const Portfolio = ({ data }) => {
               );
             } else {
               return (
-                <IntersectionObserver>
+                <IntersectionObserver key={data.id}>
                   <ScaleBox action="fadeInRight">
                     <div
                       className="portfolio-item"
-                      key={data.id}
-                      custom={(isRight = !isRight)}
+                      custom={
+                        isRight == true ? (isRight = false) : (isRight = true)
+                      }
                     >
                       <div className="portfolio-description has-margin-right">
                         <h6>{data.category}</h6>
