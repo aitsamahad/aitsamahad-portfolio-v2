@@ -1,7 +1,7 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
 import { getAllPortfolioIds, getPortfolioData } from "../../lib/portfolio";
-import Date from "../../components/date";
+// import Date from "../../components/date";
 
 // import utilStyles from "../../styles/utils.module.css";
 

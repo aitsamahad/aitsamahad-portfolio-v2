@@ -2,8 +2,8 @@ import { getSortedPostsData } from "../lib/posts";
 import { getSortedPortfolioData } from "../lib/portfolio";
 import { getSortedExperienceData } from "../lib/experience";
 
-import Link from "next/link";
-import Date from "../components/date";
+// import Link from "next/link";
+// import Date from "../components/date";
 import Header from "../components/Header";
 import Meta from "../components/resuables/Meta";
 import About from "../components/About";
