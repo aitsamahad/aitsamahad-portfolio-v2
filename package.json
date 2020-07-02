@@ -9,13 +9,18 @@
   },
   "dependencies": {
     "date-fns": "^2.14.0",
+    "framer-motion": "^1.11.1",
     "gray-matter": "^4.0.2",
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-scripts": "^3.4.1",
+    "react-markdown": "^4.3.1",
+    "react-particles-js": "^3.2.1",
     "react-scroll": "^1.7.16",
+    "react-use": "^15.3.0",
     "remark": "^12.0.0",
-    "remark-html": "^11.0.2"
+    "remark-html": "^11.0.2",
+    "storyblok-js-client": "^2.5.1",
+    "storyblok-react": "^0.0.10"
   }
 }
