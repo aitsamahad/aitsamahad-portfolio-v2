@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+// import Layout from "../../components/layout";
 import Head from "next/head";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 // import Date from "../../components/date";
@@ -7,7 +7,7 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 
 export default function Post({ postData }) {
   return (
-    <Layout>
+    <>
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -16,7 +16,7 @@ export default function Post({ postData }) {
         <div>{/* <Date dateString={postData.date} /> */}</div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-    </Layout>
+    </>
   );
 }
 

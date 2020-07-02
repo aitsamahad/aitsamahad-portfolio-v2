@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+// import Layout from "../../components/layout";
 import Head from "next/head";
 import { getAllPortfolioIds, getPortfolioData } from "../../lib/portfolio";
 // import Date from "../../components/date";
@@ -7,7 +7,7 @@ import { getAllPortfolioIds, getPortfolioData } from "../../lib/portfolio";
 
 export default function Post({ portfolioData }) {
   return (
-    <Layout>
+    <>
       <Head>
         <title>{portfolioData.title}</title>
       </Head>
@@ -16,7 +16,7 @@ export default function Post({ portfolioData }) {
         <div>{/* <Date dateString={portfolioData.date} /> */}</div>
         <div dangerouslySetInnerHTML={{ __html: portfolioData.contentHtml }} />
       </article>
-    </Layout>
+    </>
   );
 }
 
