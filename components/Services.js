@@ -16,8 +16,8 @@ const Services = () => {
     >
       <div className="container">
         <div className="section-heading">
-          <h1>Services</h1>
-          <h6>What i can do for you</h6>
+          <h1>Process</h1>
+          <h6>What methodology do i follow</h6>
         </div>
         <motion.div variants={stagger} className="my-skills">
           <IntersectionObserver>
@@ -28,13 +28,31 @@ const Services = () => {
                 className="skill"
               >
                 <div className="icon-container">
-                  <i className="fas fa-layer-group"></i>
+                  <i className="">
+                    <img src="/images/designer.svg" />
+                  </i>
                 </div>
-                <h1>Web Development</h1>
+                <h1>Designer</h1>
+                <p>I will design and create an interactive prototype.</p>
+              </motion.div>
+            </ScaleBox>
+          </IntersectionObserver>
+          <IntersectionObserver>
+            <ScaleBox>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="skill"
+              >
+                <div className="icon-container">
+                  <i className="">
+                    <img src="/images/tester.svg" />
+                  </i>
+                </div>
+                <h1>Tester</h1>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Asperiores quidem soluta provident sequi fugit aliquid
-                  voluptate animi suscipit earum similique.
+                  I will analyze the prototype with real users in order to
+                  optimize and validate the solution.
                 </p>
               </motion.div>
             </ScaleBox>
@@ -47,32 +65,14 @@ const Services = () => {
                 className="skill"
               >
                 <div className="icon-container">
-                  <i className="fas fa-code"></i>
+                  <i className="">
+                    <img src="/images/deployer.svg" />
+                  </i>
                 </div>
-                <h1>Android Applications</h1>
+                <h1>Deployer</h1>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Asperiores quidem soluta provident sequi fugit aliquid
-                  voluptate animi suscipit earum similique.
-                </p>
-              </motion.div>
-            </ScaleBox>
-          </IntersectionObserver>
-          <IntersectionObserver>
-            <ScaleBox>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="skill"
-              >
-                <div className="icon-container">
-                  <i className="fas fa-chart-bar"></i>
-                </div>
-                <h1>iOS Applications</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Asperiores quidem soluta provident sequi fugit aliquid
-                  voluptate animi suscipit earum similique.
+                  Once the prototype has been validated. We can develop, launch
+                  the product.
                 </p>
               </motion.div>
             </ScaleBox>
