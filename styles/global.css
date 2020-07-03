@@ -47,7 +47,6 @@ body {
   background: var(--background-pastel);
   background-size: cover;
   color: var(--text-pastel);
-  mix-blend-mode: difference;
 }
 
 section {
@@ -314,7 +313,6 @@ img {
   max-width: 80%;
   max-height: 70%;
   overflow: auto;
-  z-index: 52;
   margin: 0 auto;
   padding: 40px 20px;
   background: var(--background-pastel);
