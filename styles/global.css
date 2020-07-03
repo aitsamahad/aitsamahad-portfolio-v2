@@ -1189,6 +1189,16 @@ input[type="submit"]:hover {
   .profile-img {
     margin: 0 0 7rem 0;
   }
+
+  .modal_header .modal_img {
+    width: 50%;
+    align-self: center;
+    margin-top: 31rem;
+  }
+
+  .modal .modal_desc {
+    margin-top: 28rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1296,7 +1306,7 @@ input[type="submit"]:hover {
     right: 2rem;
   }
   .modal .modal_desc {
-    margin-top: 22rem;
+    margin-top: 32rem;
   }
 }
 /*End media queries*/
