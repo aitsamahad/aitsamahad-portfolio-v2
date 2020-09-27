@@ -1,4 +1,3 @@
-import { getSortedPostsData } from "../lib/posts";
 import { getSortedPortfolioData } from "../lib/portfolio";
 import { getSortedExperienceData } from "../lib/experience";
 
@@ -15,8 +14,10 @@ import Footer from "../components/Footer";
 import SocialSticky from "../components/resuables/SocialSticky";
 import EmailSticky from "../components/resuables/EmailSticky";
 import PStyle from "../components/resuables/PStyle";
+import { getExample } from "../lib/api.js";
 
 export default function Home({ experienceTabData, allPortfolioData }) {
+  getExample();
   return (
     <>
       <Meta title="Aitsam Ahad" />
@@ -35,8 +36,6 @@ export default function Home({ experienceTabData, allPortfolioData }) {
 }
 
 export async function getStaticProps() {
-  // For Posts
-  const allPostsData = getSortedPostsData();
   // For Portfolio
   const allPortfolioData = getSortedPortfolioData();
   // For Experience
@@ -45,7 +44,6 @@ export async function getStaticProps() {
 
   return {
     props: {
-      allPostsData,
       allPortfolioData,
       experienceTabData,
     },

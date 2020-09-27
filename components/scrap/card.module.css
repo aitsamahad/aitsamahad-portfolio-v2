@@ -1,0 +1,139 @@
+.card {
+  background: white;
+  padding: 10em 10em 10em 10em;
+  margin: 17em 1em 1em 1em;
+  border-radius: 10px;
+  position: relative;
+  /* box-shadow: 0 6px 13px 2px rgba(0, 0, 0, 0.05); */
+  box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+}
+
+.author_section {
+  margin-top: 10em;
+  position: relative;
+}
+
+.author_section .author {
+  position: absolute;
+  padding-left: 1em;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #286fb4;
+}
+
+.author_section .date {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #286fb4;
+}
+
+.summary {
+  margin-top: 8em;
+  font-size: 18px;
+}
+
+.readmore {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+  font-size: 60px;
+  color: #df4c73;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.readmore:hover {
+  background: #286fb4;
+  color: #f9faf4;
+  transition: ease 650ms all;
+}
+
+.tag_list {
+  margin-top: 50px;
+  margin-left: 100px;
+  padding-bottom: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* font-size: 30px; */
+}
+
+.tag_list .tag {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card_title {
+  position: absolute;
+  margin: 0;
+  top: 50px;
+  max-width: 600px;
+  padding: 60px;
+  font-size: 40px;
+  color: #f9faf4;
+  cursor: pointer;
+}
+
+.card_img_container {
+  position: absolute;
+  top: -120px;
+}
+.card_img {
+  position: relative;
+  background-size: cover;
+  max-width: 700px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); */
+  box-shadow: 0 6px 13px 2px rgba(0, 0, 0, 0.05);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card_img:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.card_img:hover img {
+  transform: translateY(-20px);
+}
+
+.card_img img {
+  /* z-index: 2; */
+  width: 100%;
+  height: 110%;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@media screen and (max-width: 1140px) {
+  .card_title {
+    font-size: 35px;
+  }
+
+  .tag_list .tag {
+    font-size: 14px;
+  }
+
+  .readmore {
+    font-size: 40px;
+  }
+
+  .summary {
+    font-size: 16px;
+  }
+
+  .author_section .author {
+    font-size: 12px;
+  }
+
+  .author_section .date {
+    font-size: 12px;
+  }
+}

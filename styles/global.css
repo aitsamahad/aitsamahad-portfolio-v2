@@ -47,6 +47,7 @@ body {
   background: var(--background-pastel);
   background-size: cover;
   color: var(--text-pastel);
+  --webkit-font-smoothing: antialiased;
 }
 
 section {
@@ -107,6 +108,13 @@ img {
   height: 100%;
   margin: 0 auto;
   position: relative;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+  margin-left: 28%;
+  margin-top: 40px;
 }
 
 .section-heading {
@@ -911,20 +919,20 @@ li {
   border: 2px solid var(--section-underline);
 }
 
-form {
+.formStyle {
   width: 70%;
   margin: 0 auto;
 }
 
-form label {
+.formStyle label {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: var(--primary-font);
 }
 
-input,
-select,
-textarea {
+.formStyle input,
+.formStyle select,
+.formStyle textarea {
   width: 100%;
   padding: 1rem;
   margin: 5px 0 5px 0;
@@ -932,7 +940,7 @@ textarea {
   outline-color: var(--pastel-accent-border);
 }
 
-input[type="submit"] {
+.formStyle input[type="submit"] {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
     "Lucida Console", Monaco, monospace;
   width: initial;
@@ -947,7 +955,7 @@ input[type="submit"] {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
-input[type="submit"]:hover {
+.formStyle input[type="submit"]:hover {
   color: var(--background-color);
   background-color: rgb(137, 187, 245);
   opacity: 0.5;

@@ -1,0 +1,166 @@
+.post_header {
+  margin-top: 80px;
+}
+
+.blog_page_container {
+  margin-top: 180px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left_container {
+  flex: 70%;
+  padding-left: 150px;
+}
+
+.right_container {
+  flex: 30%;
+  padding-right: 150px;
+}
+
+.post_image_container {
+  position: relative;
+  max-width: 700px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.post_image_container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border-radius: 20px; */
+  /* width: 100%;
+  height: 100%; */
+}
+
+.post_title {
+  font-size: 47px;
+  max-width: 900px;
+  margin: 10px;
+}
+
+.post_date {
+  font-size: 18px;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.post_desc {
+  max-width: 800px;
+  line-height: 1.8;
+  padding-top: 30px;
+}
+
+.post_desc > h3 {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 24px;
+}
+
+.post_desc p {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.post_desc h2 {
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.post_desc h4 {
+  font-size: 27px;
+  padding-top: 30px;
+}
+
+.post_desc ul > li {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.post_desc ul > li > a {
+  color: #df4c73;
+  text-decoration: underline;
+}
+
+.clearfix {
+  padding: 100px;
+}
+
+.sidebar_widget {
+  background-color: #fff;
+  box-shadow: 0 15px 80px rgba(0, 0, 0, 0.14);
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.sidebar_widget h5,
+.getting_started h5,
+.categories_list h5 {
+  font-size: 20px;
+}
+
+.sidebar_widget p,
+.getting_started p,
+.categories_list p {
+  padding-top: 20px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.sidebar_widget p > a,
+.getting_started p > a,
+.categories_list p > a,
+.getting_started > ul > li > a,
+.categories_list > ul > li > a {
+  color: #df4c73;
+  text-decoration: underline;
+}
+
+.getting_started,
+.categories_list {
+  word-wrap: break-word;
+  padding: 50px;
+}
+
+.important_links,
+.categories_links {
+  padding-top: 20px;
+}
+
+.categories_list ul > li,
+.getting_started ul > li {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 400;
+  list-style-type: square;
+}
+
+.post_desc img {
+  max-width: 700px;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1240px) {
+  .blog_page_container {
+    flex-direction: column;
+  }
+
+  .sidebar_widget {
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+
+  .getting_started,
+  .categories_list {
+    margin-left: 50px;
+  }
+}

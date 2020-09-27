@@ -1,0 +1,71 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 100;
+}
+
+.headerGroup {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.headerGroup a {
+  color: #f9faf4;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--primary-font);
+  outline: none;
+}
+
+.headerGroup .logo {
+  width: 120px;
+}
+
+/* Post Section Header Start */
+.headerGroupPost {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.headerGroupPost a {
+  color: #4a6163;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--primary-font);
+  outline: none;
+}
+
+.headerGroupPost .logo {
+  width: 120px;
+}
+/* Post Section Header End */
+
+@media screen and (max-width: 640px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  /* display grid of only 4 elements */
+  .headerGroup {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  /* display grid of only 4 elements */
+  .headerGroupPost {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  /* To remove the 3rd element, which in our case right now is resourses */
+  .header a:nth-child(3) {
+    display: none;
+  }
+}
